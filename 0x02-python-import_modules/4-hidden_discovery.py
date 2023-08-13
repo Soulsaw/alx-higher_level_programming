@@ -4,4 +4,4 @@ if __name__ == "__main__":
     _len = len(dir(hidden_4))
 
     for i in range(_len):
-        print("{}".format(dir(main)[i]))
+        print("{}".format(dir(hidden_4)[i]))
