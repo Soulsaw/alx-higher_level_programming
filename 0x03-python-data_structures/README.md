@@ -21,3 +21,9 @@ Write a function that returns a tuple with the length of a string and its first 
 Write a function that finds the biggest integer of a list.
 ## 10. Only by 2
 Write a function that finds all multiples of 2 in a list.
+## 11. Delete at
+Write a function that deletes the item at a specific position in a list.
+## 12. Switch
+Complete the source code in order to switch value of a and b
+## 13. Linked list palindrome
+Write a function in C that checks if a singly linked list is a palindrome
