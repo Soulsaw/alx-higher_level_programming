@@ -14,6 +14,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
                 b = tuple_a[i] + tuple_b[j]
                 break
     return (a, b)
-                
-            
-    
