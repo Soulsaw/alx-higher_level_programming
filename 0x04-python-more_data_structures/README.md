@@ -25,3 +25,9 @@ Write a function that returns a key with the biggest integer value.
 Write a function that returns a list with all values multiplied by a number without using any loops.
 ## 12. Roman to Integer
 Create a function def roman_to_int(roman_string): that converts a Roman numeral to an integer.
+## 13. Weighted average!
+Write a function that returns the weighted average of all integers tuple ``(<score>, <weight>)``
+## 14. Squared by using map
+Write a function that computes the square value of all integers of a matrix using map
+## 15. Delete by value
+Write a function that deletes keys with a specific value in a dictionary.
