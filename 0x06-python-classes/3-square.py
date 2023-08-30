@@ -29,7 +29,7 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-    
+
     def area(self):
         """
         This is the function that return the area of the square
