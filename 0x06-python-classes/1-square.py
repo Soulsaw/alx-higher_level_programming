@@ -1,8 +1,22 @@
 #!/usr/bin/python3
+"""
+This class permit to manipulate a square
+
+Author: @SOULEYTECH
+Date: 30/08/2023
+
+"""
+
+
 class Square:
-    """This is the documentation of the Square class
-    Args:
-        size (object): The size of the square.
+    """
+    This class represented the square
     """
     def __init__(self, size):
+        """
+        This is a documentation of the init method
+
+        Args:
+            size : This is the size of the square
+        """
         self.__size = size
