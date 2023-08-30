@@ -13,3 +13,7 @@ Write a class Square that defines a square by: (based on 3-square.py)
 Write a class Square that defines a square by: (based on 4-square.py)
 ## 6. Coordinates of a square
 Write a class Square that defines a square by: (based on 5-square.py)
+## 7. Singly linked list
+Write a class Node that defines a node of a singly linked list by:
+## 8. Print Square instance
+Write a class Square that defines a square by: (based on 6-square.py)
