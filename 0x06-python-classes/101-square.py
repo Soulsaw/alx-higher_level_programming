@@ -29,13 +29,12 @@ class Square:
 
     def __str__(self):
         """
-        This function print the square of the # is size is more than 0
-
+        This is the docstring og the __str__ method
         """
-        squares = ""
         if self.size == 0:
-            return "\n"
+            return ""
         else:
+            squares = ""
             for g in range(self.position[1]):
                 squares += "\n"
             for i in range(self.size):
