@@ -31,20 +31,7 @@ class Square:
         """
         This is the docstring og the __str__ method
         """
-        if self.size == 0:
-            return ""
-        else:
-            squares = ""
-            for g in range(self.position[1]):
-                squares += "\n"
-            for i in range(self.size):
-                for k in range(self.position[0]):
-                    squares += " "
-                for j in range(self.size):
-                    squares += "#"
-                if i < self.size - 1:
-                    squares += "\n"
-            return squares
+        return self.my_print()
 
     @property
     def size(self):
@@ -106,13 +93,21 @@ tuple of 2 positive integers")
 
         """
         if self.size == 0:
+            my_squares = ""
             print()
         else:
+            my_squares = ""
             for g in range(self.position[1]):
+                my_squares += "\n"
                 print()
             for i in range(self.size):
                 for k in range(self.position[0]):
+                    my_squares += " "
                     print("{}".format(" "), end='')
                 for j in range(self.size):
+                    my_squares += "#"
                     print("{}".format("#"), end='')
+                if i < self.size - 1:
+                    my_squares += "\n"
                 print()
+        return my_squares
