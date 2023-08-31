@@ -26,7 +26,7 @@ class Square:
         """
         self.size = size
         self.position = position
-    
+
     def __str__(self):
         """
         This function print the square of the # is size is more than 0
@@ -46,6 +46,7 @@ class Square:
                 if i < self.size - 1:
                     squares += "\n"
             return squares
+
     @property
     def size(self):
         """
