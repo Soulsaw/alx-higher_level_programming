@@ -26,7 +26,7 @@ class Square:
         """
         self.size = size
         self.position = position
-
+    
     def __str__(self):
         """
         This function print the square of the # is size is more than 0
@@ -43,9 +43,9 @@ class Square:
                     squares += " "
                 for j in range(self.size):
                     squares += "#"
-                squares += "\n"
+                if i < self.size - 1:
+                    squares += "\n"
             return squares
-
     @property
     def size(self):
         """
@@ -85,7 +85,8 @@ class Square:
         :return: Nothing
         """
         if type(value) is tuple and len(value) == 2 and \
-                value[0] >= 0 and value[1] >= 0:
+                type(value[0]) is int and type(value[1]) is int \
+                and value[0] >= 0 and value[1] >= 0:
             self.__position = value
         else:
             raise TypeError("position must be a \
@@ -107,6 +108,8 @@ tuple of 2 positive integers")
         if self.size == 0:
             print()
         else:
+            for g in range(self.position[1]):
+                print()
             for i in range(self.size):
                 for k in range(self.position[0]):
                     print("{}".format(" "), end='')
