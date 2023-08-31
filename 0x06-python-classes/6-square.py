@@ -89,10 +89,11 @@ tuple of 2 positive integers")
         if self.size == 0:
             print()
         else:
+            for g in range(self.position[1]):
+                print()
             for i in range(self.size):
-                if self.position[1] == 0:
-                    for k in range(self.position[0]):
-                        print("{}".format(" "), end='')
+                for k in range(self.position[0]):
+                    print("{}".format(" "), end='')
                 for j in range(self.size):
                     print("{}".format("#"), end='')
                 print()
