@@ -70,15 +70,27 @@ class Node:
 
 class SinglyLinkedList:
     """
+    This is the structured singly list
 
+    Author: @SOULEYTECH
+    Date: 31/08/2023
     """
     def __init__(self):
+        """
+        This is the docstring of the __init__ method
+        """
         self.__head = None
 
     def __str__(self):
+        """
+        This is the docstring of the __str__ method
+        """
         return self.printList()
 
     def sorted_insert(self, value):
+        """
+        This method permit to add a data in the linked list
+        """
         top = Node(value, None)
         if self.__head is None:
             self.__head = top
@@ -89,6 +101,9 @@ class SinglyLinkedList:
             tmp.next_node = top
 
     def printList(self):
+        """
+        This method permit to print all data of the list
+        """
         my_list = ""
         tmp = self.__head
         while tmp:
