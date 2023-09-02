@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
+    boolean = False
     try:
         print("{:d}".format(value))
-        return True
+        boolean = True
     except ValueError:
-        return False
+        boolean = False
+    return boolean
