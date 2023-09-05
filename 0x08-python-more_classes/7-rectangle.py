@@ -31,6 +31,10 @@ class Rectangle:
         self.height = height
         type(self).number_of_instances += 1
 
+    @classmethod
+    def get_print(cls):
+        return Rectangle.print_symbol
+
     def __str__(self):
         """
         This is the __str__ method
@@ -42,7 +46,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    rectange += type(self).print_symbol
+                    rectange += Rectangle.print_symbol
                 if i < self.height - 1:
                     rectange += "\n"
         return rectange
