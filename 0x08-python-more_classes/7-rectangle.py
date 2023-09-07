@@ -16,6 +16,7 @@ class Rectangle:
         number_of_instances is the public attribute
     """
     number_of_instances = 0
+    self.print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -27,14 +28,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        self.print_symbol = "#"
         type(self).number_of_instances += 1
-
-    def print_symbol(self, value):
-        self.print_symbol = str(value)
-
-    def print_symbol(self):
-        return self.print_symbol
 
     def __str__(self):
         """
@@ -47,7 +41,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    rectange += self.print_symbol
+                    rectange += Rectangle.print_symbol
                 if i < self.height - 1:
                     rectange += "\n"
         return rectange
