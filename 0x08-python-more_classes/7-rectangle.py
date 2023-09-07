@@ -16,7 +16,7 @@ class Rectangle:
         number_of_instances is the public attribute
     """
     number_of_instances = 0
-    self.print_symbol = "#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
