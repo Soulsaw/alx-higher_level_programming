@@ -137,3 +137,20 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
+
+    def bigger_or_equal(rect_1, rect_2):
+        """
+        This function return the biggest of two rectangle
+        """
+        if isinstance(rect_1, Rectangle):
+            if isinstance(rect_2, Rectangle):
+                if rect_1.area() == rect_2.area():
+                    return rect_1
+                elif rect_1.area() > rect_2.area():
+                    return rect_1
+                else:
+                    return rect_2
+            else:
+                raise TypeError("rect_2 must be an instance of Rectangle")
+        else:
+            raise TypeError("rect_1 must be an instance of Rectangle")
