@@ -159,7 +159,6 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """
+        this method transform rectangle to square
         """
-        cls.width = size
-        cls.height = size
-        return cls
+        return cls(size, size)
