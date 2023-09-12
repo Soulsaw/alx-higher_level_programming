@@ -18,4 +18,4 @@ def is_same_class(obj, a_class):
     :param a_class(class): The second class
     :return: True or False
     """
-    return isinstance(obj, a_class) & issubclass(obj.__class__, a_class)
+    return obj.__class__ is a_class
