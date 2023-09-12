@@ -18,4 +18,4 @@ def inherits_from(obj, a_class):
     :param a_class(class): The second class
     :return: True or False
     """
-    return obj.__class__ is not a_class
+    return a_class is not obj.__class__
