@@ -1,0 +1,6 @@
+"""
+    from 1-my_list import list
+
+    new_list = l
+
+"""
