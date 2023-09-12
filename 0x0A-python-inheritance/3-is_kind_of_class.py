@@ -18,5 +18,5 @@ def is_kind_of_class(obj, a_class):
     :param a_class(class): The second class
     :return: True or False
     """
-    if isinstance(obj, a_class):
-        return True
+    return isinstance(obj, a_class)
+
