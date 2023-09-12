@@ -41,6 +41,7 @@ class MyList(list):
                 sort_list[i], ", " if i < list_len - 1 else ''), end='')
         print("]")
 
+
 if __name__ == "__main__":
     import doctest
     doctest.testfile("./tests/1-my_list.txt")
