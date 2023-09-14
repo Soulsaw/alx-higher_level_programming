@@ -16,7 +16,7 @@ def read_file(filename=""):
     :param filename(str): The is the name of file
     :return: Nothing
     """
-    read_f = open(filename, 'r')
-    for ligne in read_f:
-        print(ligne, end='')
-    read_f.close()
+    with open(filename, mode='r', encoding='utf-8') as read_f:
+        for ligne in read_f:
+            print(ligne, end='')
+        read_f.close()
