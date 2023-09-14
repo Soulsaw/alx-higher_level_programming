@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 """
 This function permit to read in the file
 
