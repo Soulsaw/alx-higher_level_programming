@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """This class is the base class in the folder
 
 Author: @SOULEYTECH
