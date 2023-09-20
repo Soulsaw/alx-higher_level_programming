@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 This function Create an object from a "JSON file"
 
@@ -7,6 +6,7 @@ Author: @SOULEYTECH
 Date: 20/09/2023
 
 """
+import json
 
 
 def load_from_json_file(filename):

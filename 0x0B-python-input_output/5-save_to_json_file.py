@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 This function write a object to a text file
 
@@ -7,6 +6,7 @@ Author: @SOULEYTECH
 Date: 20/09/2023
 
 """
+import json
 
 
 def save_to_json_file(my_obj, filename):

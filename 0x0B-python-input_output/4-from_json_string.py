@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 This function return the json representation of string
 
@@ -7,6 +6,7 @@ Author: @SOULEYTECH
 Date: 20/09/2023
 
 """
+import json
 
 
 def from_json_string(my_str):
