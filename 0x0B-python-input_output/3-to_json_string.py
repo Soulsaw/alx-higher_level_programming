@@ -17,4 +17,4 @@ def to_json_string(my_obj):
     :param filename(str): The is the name of file
     :return: Nothing
     """
-   return json.JSONEncoder().encode(my_obj)
+   return json.load(my_obj)
