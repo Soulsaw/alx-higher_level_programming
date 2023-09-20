@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 This function permit to read in the file
 
@@ -7,6 +6,7 @@ Author: @SOULEYTECH
 Date: 14/09/2023
 
 """
+import json
 
 
 def to_json_string(my_obj):
@@ -17,4 +17,4 @@ def to_json_string(my_obj):
     :param filename(str): The is the name of file
     :return: Nothing
     """
-   return json.dump(json.loads(my_obj))
+    return (json.dumps(my_obj))
