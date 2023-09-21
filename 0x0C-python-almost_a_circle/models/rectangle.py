@@ -41,6 +41,7 @@ class Rectangle(Base):
     def height(self, height):
         """This function permit to set the value of the height
         """
+        self.validator(height, "height")
         self.__height = height
 
     @property
@@ -53,6 +54,7 @@ class Rectangle(Base):
     def width(self, width):
         """This function permit to set the value of the width attribut
         """
+        self.validator(width, "width")
         self.__width = width
 
     @property
@@ -78,3 +80,12 @@ class Rectangle(Base):
         """This function permit to set the value of the y attribute
         """
         self.__y = y
+
+    def validator(self, value, name=""):
+        """This function permit to valida an attributes
+        """
+        if type(value) is int and isinstance(value, int):
+            if value <= 0:
+                raise ValueError("{} must be > 0".format(name))
+        else:
+            raise TypeError("{} must be an integer".format(name))
