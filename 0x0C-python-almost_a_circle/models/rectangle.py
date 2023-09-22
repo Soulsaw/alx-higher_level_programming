@@ -89,3 +89,25 @@ class Rectangle(Base):
                 raise ValueError("{} must be > 0".format(name))
         else:
             raise TypeError("{} must be an integer".format(name))
+
+    def area(self):
+        """This method return the area of the rectangle instance
+        """
+        return (self.width * self.height)
+
+    def display(self):
+        """This method permit to print in the stdout a rectangle of - #
+        """
+        for i in range(self.height):
+            for j in range(self.width):
+                print("{}".format("#"), end='')
+            print()
+
+    def __str__(self):
+        """This is the __str__ method
+        This method permit to describe string representation
+        of the class instance
+        """
+        return "[{}] ({}) {}/{} - {}/{}" \
+            .format(self.__class__.__name__, self.id,
+                    self.x, self.y, self.width, self.height)
