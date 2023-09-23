@@ -10,15 +10,19 @@ def print_square(size):
     """This function print a square of "#"
         :param size(int) : The size of square
         :return : Nothing"""
-    if type(size) is not int or (type(size) is float and size < 0):
-        raise TypeError("size must be an integer")
-    elif size < 0:
-        raise ValueError("size must be >= 0")
+    if type(size) in [int, float]:
+        if type(size) is float and size < 0:
+            raise TypeError("size must be an integer")
+        else:
+            if size >= 0:
+                for i in range(int(size)):
+                    for j in range(int(size)):
+                        print("{}".format("#"), end='')
+                    print()
+            else:
+                raise ValueError("size must be >= 0")
     else:
-        for i in range(size):
-            for j in range(size):
-                print("{}".format("#"), end='')
-            print()
+        raise TypeError("size must be an integer")
 
 
 if __name__ == "__main__":
