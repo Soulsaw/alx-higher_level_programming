@@ -32,10 +32,3 @@ class Square(Rectangle):
             :return: The area of the rectangle
         """
         return (self.__width ** 2)
-
-    def __str__(self):
-        """
-        This function return the string representation of the class
-        """
-        return "[{}] {}/{}".format(self.__class__.__name__,
-                                   self.__width, self.__height)
