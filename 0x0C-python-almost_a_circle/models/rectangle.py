@@ -67,7 +67,13 @@ class Rectangle(Base):
     def x(self, x):
         """This function set the value of the x attribute
         """
-        self.__x = x
+        if type(x) is int:
+            if x >= 0:
+                self.__x = x
+            else:
+                raise ValueError("x must be >= 0")
+        else:
+            raise TypeError("x must be an integer")
 
     @property
     def y(self):
@@ -79,13 +85,19 @@ class Rectangle(Base):
     def y(self, y):
         """This function permit to set the value of the y attribute
         """
-        self.__y = y
+        if type(y) is int:
+            if y >= 0:
+                self.__y = y
+            else:
+                raise ValueError("y must be >= 0")
+        else:
+            raise TypeError("y must be an integer")
 
     def validator(self, value, name=""):
         """This function permit to valida an attributes
         """
         if type(value) is int and isinstance(value, int):
-            if value <= 0:
+            if value < 0:
                 raise ValueError("{} must be > 0".format(name))
         else:
             raise TypeError("{} must be an integer".format(name))
