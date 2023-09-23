@@ -12,8 +12,6 @@ class Rectangle(Base):
     Args:
         :param ():
     """
-    __nb_objects = 0
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """This is the init methods that permit to init the constructor
 
