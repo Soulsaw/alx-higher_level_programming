@@ -62,3 +62,14 @@ class Square(Rectangle):
             if kwargs.get("x") is not None else self.x
         self.y = args[3] if len(args) > 3 else kwargs.get("y") \
             if kwargs.get("y") is not None else self.y
+
+    def to_dictionary(self):
+        """This method reresent the dictionary representation
+        of the the class square
+        """
+        new_dict = {}
+        new_dict["id"] = self.id
+        new_dict["size"] = self.size
+        new_dict["x"] = self.x
+        new_dict["y"] = self.y
+        return new_dict

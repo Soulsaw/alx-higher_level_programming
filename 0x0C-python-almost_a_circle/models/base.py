@@ -4,6 +4,7 @@
 Author: @SOULEYTECH
 Date: 18/09/2023
 """
+import json
 
 
 class Base:
@@ -32,3 +33,12 @@ class Base:
         of the private attribut
         """
         self.__nb_objects += 1
+
+    def to_json_string(list_dictionaries):
+        """This function return the string representation of a dictionary
+        """
+        return json.dumps(list_dictionaries)
+
+    def save_to_file(cls, list_objs):
+        """
+        """
