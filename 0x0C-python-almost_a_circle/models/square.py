@@ -25,3 +25,12 @@ class Square(Rectangle):
             :return: Nothing
         """
         super().__init__(size, size, x, y, id)
+
+    def __str__(self):
+        """This is the __str__ method
+        This method permit to describe string representation
+        of the class instance
+        """
+        return "[{}] ({}) {}/{} - {}" \
+            .format(self.__class__.__name__, self.id,
+                    self.x, self.y, self.width)
