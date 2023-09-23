@@ -34,6 +34,7 @@ class Base:
         """
         self.__nb_objects += 1
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """This function return the string representation of a dictionary
         """
@@ -42,5 +43,9 @@ class Base:
         return json.dumps(list_dictionaries)
 
     def save_to_file(cls, list_objs):
+        """this function save
         """
-        """
+        with open(self.__class__.name + ".json", mode='w+', encoding='utf-8') as f:
+            for val in list_objs:
+                f.write(to_json_string(val))
+            f.close()
