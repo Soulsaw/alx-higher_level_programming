@@ -34,8 +34,7 @@ class Square(Rectangle):
     def size(self, size):
         """
         """
-        self.width = size
-        self.height = size
+        self.width = self.height = size
 
     def __str__(self):
         """This is the __str__ method
