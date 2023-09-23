@@ -128,16 +128,22 @@ class Rectangle(Base):
             .format(self.__class__.__name__, self.id,
                     self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """This method permit to update the constructor
         With the tuple of arguments
 
         Args:
             Is the tuple of arguments
-            :param args(tuple): The arguments
+            :param args(tuple): The first arguments
+            :param kwargs(dictionary): The seconds arguments
         """
-        self.id = args[0] if len(args) > 0 else self.id
-        self.width = args[1] if len(args) > 1 else self.width
-        self.height = args[2] if len(args) > 2 else self.height
-        self.x = args[3] if len(args) > 3 else self.x
-        self.y = args[4] if len(args) > 4 else self.y
+        self.id = args[0] if len(args) > 0 else kwargs.get("id") \
+            if kwargs.get("id") is not None else self.id
+        self.width = args[1] if len(args) > 1 else kwargs.get("width") \
+            if kwargs.get("width") is not None else self.width
+        self.height = args[2] if len(args) > 2 else kwargs.get("height") \
+            if kwargs.get("height") is not None else self.height
+        self.x = args[3] if len(args) > 3 else kwargs.get("x") \
+            if kwargs.get("x") is not None else self.x
+        self.y = args[4] if len(args) > 4 else kwargs.get("y") \
+            if kwargs.get("y") is not None else self.y
