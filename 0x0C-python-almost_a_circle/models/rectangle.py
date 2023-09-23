@@ -145,3 +145,14 @@ class Rectangle(Base):
             if kwargs.get("x") is not None else self.x
         self.y = args[4] if len(args) > 4 else kwargs.get("y") \
             if kwargs.get("y") is not None else self.y
+
+    def to_dictionary(self):
+        """This method reresent the dictionary representation
+        of the the class rectangle
+        """
+        new_dict = {}
+        new_dict["x"] = self.x
+        new_dict["y"] = self.y
+        new_dict["height"] = self.height
+        new_dict["width"] = self.width
+        return new_dict
