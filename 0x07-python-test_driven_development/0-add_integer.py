@@ -10,7 +10,7 @@ def add_integer(a, b=98):
     """This function permit to add to integer
         :param a(int) : The first integer
         :param b(int) : The second integer"""
-    if type(a) not in [int, float]:
+    if a is None or type(a) not in [int, float]:
         raise TypeError("a must be an integer")
     elif type(b) not in [int, float]:
         raise TypeError("b must be an integer")
