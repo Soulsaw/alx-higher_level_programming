@@ -2,7 +2,12 @@
 >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit""")
 Lorem ipsum dolor sit amet, consectetur adipiscing elit
 >>> try:
-...     print(text_indentation(85678))
+...     text_indentation(85678)
 ... except Exception as e:
 ...     print(e)
 text must be a string
+>>> try:
+...    text_indentation()
+... except Exception as e:
+...    print(e)
+text_indentation() missing 1 required positional argument: 'text'
