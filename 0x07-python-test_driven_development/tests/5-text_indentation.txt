@@ -11,3 +11,7 @@ text must be a string
 ... except Exception as e:
 ...    print(e)
 text_indentation() missing 1 required positional argument: 'text'
+>>> text_indentation("\nbonsoir.")  #doctest: +NORMALIZE_WHITESPACE
+<BLANKLINE>
+bonsoir.
+<BLANKLINE>
