@@ -18,7 +18,7 @@ with open(filename, mode='a', encoding='utf-8') as f:
     """
     try:
         my_list = load_from_json_file(filename)
-    except /:
+    except Exception as e:
         my_list = []
     finally:
         for idx in range(1, len(sys.argv)):
