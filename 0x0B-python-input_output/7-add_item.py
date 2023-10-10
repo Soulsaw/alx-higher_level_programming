@@ -9,6 +9,8 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 filename = "add_item.json"
 my_list = []
 with open(filename, mode='a', encoding='utf-8') as f:
+    """this is the management of the file block
+    """
     try:
         my_list = load_from_json_file(filename)
     except /:
