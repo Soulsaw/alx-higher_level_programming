@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """
-This scripts add all arguments to a file
-Date:20/09/2023
+This function Create an object from a "JSON file"
+
+Author: @SOULEYTECH
+Date: 20/09/2023
+
 """
 import sys
 
