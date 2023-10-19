@@ -36,7 +36,6 @@
 ## 8. Cities of California
 [Task 8](./8-cities_of_california_subquery.sql) Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
 * The states table contains only one record where name = California (but the id can be different, as per the example)
-<<<<<<< HEAD
 * Results must be sorted in ascending order by cities.id
 ## 9. Cities by States
 [Task 9](./9-cities_by_state_join.sql) Write a script that lists all cities contained in the database hbtn_0d_usa
@@ -45,6 +44,9 @@
 ## 10. Genre ID by show
 [Task 10](./10-genre_id_by_show.sql) Import the database dump from hbtn_0d_tvshows to your MySQL server:[Download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql)
 
-=======
-* Results must be sorted in ascending order by cities.id
->>>>>>> 4401c5b0c25237b7bb4e03078c9601061cfbf5fa
+## 11. Genre ID for all shows
+[Task 11](./11-genre_id_all_shows.sql) Import the database dump of hbtn_0d_tvshows to your MySQL server
+## 12. No genre
+[Task 12](./12-no_genre.sql) Write a script that lists all shows contained in hbtn_0d_tvshows without a genre linked
+## 13. Number of shows by genre
+[Task 13](./13-count_shows_by_genre.sql) Write a script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each.
