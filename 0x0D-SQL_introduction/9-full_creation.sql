@@ -7,9 +7,12 @@ CREATE TABLE IF NOT EXISTS `second_table`
 	`score` INT
 );
 -- inserting data in the second_table
-INSERT INTO `second_table`(`id`,`name`,`score`)
-VALUES
-(1,'John',10),
-(2,'Alex',3),
-(3,'Bob',14),
-(4,'Gorge',8);
+-- inserting some data
+INSERT INTO `second_table`(id,name,score)VALUES(1,'John',10);
+-- inserting some data
+INSERT INTO `second_table`(id,name,score)VALUES(2,'Alex',3);
+-- inserting some data
+INSERT INTO `second_table`(id,name,score)VALUES(3,'Bob',14);
+-- inserting some data
+INSERT INTO `second_table`(id,name,score)VALUES(4,'Gorge',8);
+
