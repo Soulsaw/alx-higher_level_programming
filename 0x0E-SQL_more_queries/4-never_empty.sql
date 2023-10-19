@@ -1,4 +1,4 @@
-/* Create a force_name table if doesn't exists */
+-- Create a force_name table if doesn't exists
 CREATE TABLE IF NOT EXISTS id_not_null
 (
     id INT DEFAULT 1 NOT NULL,
