@@ -1,3 +1,2 @@
---- This script permit to create a non existing
---- databases in the server
+--- Create if not exists database hbtn_0c_0
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;

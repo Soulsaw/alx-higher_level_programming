@@ -1,3 +1,2 @@
---- This script permit to lists all tables on the
---- mysql database
+--- List all tables on the database giving on argument in the command
 SHOW TABLES;

@@ -1,7 +1,2 @@
---- This script permit to create the first_table
---- with the in and name like its attributes
-CREATE TABLE IF NOT EXISTS first_table
-(
-	id INT,
-	name VARCHAR(256)
-);
+--- Create if not exists the table first_table
+CREATE TABLE IF NOT EXISTS first_table(id INT,name VARCHAR(256));
