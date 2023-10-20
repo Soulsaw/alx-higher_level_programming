@@ -1,4 +1,5 @@
 -- list all show without the genre Comedy
+-- list all shows whithout the genre name Comedy
 SELECT title FROM tv_shows
 WHERE title NOT IN
 (

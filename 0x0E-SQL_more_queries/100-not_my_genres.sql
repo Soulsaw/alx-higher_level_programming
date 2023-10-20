@@ -1,4 +1,5 @@
 -- list all genres not linker to the shows Dexter
+-- list all genres
 SELECT name FROM tv_genres
 WHERE name NOT IN
 (
