@@ -6,7 +6,7 @@ class Square extends oldSquare {
   charPrint (c) {
     let char = c;
     if (c === undefined) {
-      char = 'x';
+      char = 'X';
     }
     for (let i = 0; i < this.height; i++) {
       console.log(char.repeat(this.width));
