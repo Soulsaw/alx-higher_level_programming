@@ -13,7 +13,9 @@ if __name__ == '__main__':
                          passwd=password, db=dbname)
     cur = db.cursor()
     param = sys.argv[4]
-    cur.execute("SELECT * FROM states WHERE name = %s", (param,))
+    query = "SELECT * FROM states WHERE name = '{}' \
+            ORDER BY states.id ASC".format(param)
+    cur.execute(query)
     rows = cur.fetchall()
     for row in rows:
         print(row)
