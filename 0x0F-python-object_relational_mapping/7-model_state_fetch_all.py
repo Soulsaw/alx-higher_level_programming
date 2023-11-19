@@ -11,6 +11,5 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
 Session = sessionmaker(bind=engine)
 session = Session()
 
-query = session.query(State).all()
-for _row in query:
+for _row in session.query(State).order_by(State.id):
     print('{}: {}'.format(_row.id, _row.name))
