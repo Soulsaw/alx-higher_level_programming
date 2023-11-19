@@ -12,5 +12,5 @@ if __name__ == "__main__":
             sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for _row in session.query(State).order_by(State.id):
-        print('{}: {}'.format(_row.id, _row.name))
+    _row = session.query(State).order_by(State.id).first()
+    print('{}: {}'.format(_row.id, _row.name))
