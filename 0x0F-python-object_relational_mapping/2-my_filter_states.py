@@ -13,7 +13,7 @@ if __name__ == '__main__':
                          passwd=password, db=dbname)
     cur = db.cursor()
     param = sys.argv[4]
-    query = "SELECT * FROM states WHERE name = '{}' \
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}' \
             ORDER BY states.id ASC".format(param)
     cur.execute(query)
     rows = cur.fetchall()
