@@ -2,8 +2,8 @@
 """The SQL definition of the base class
 """
 import sys
-from model_city import City
-from model_state import State
+from relationship_city import City
+from relationship_state import State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
