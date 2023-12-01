@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-# 
-curl -
+#!/bin/bash
+# the bin
+curl -s -w "%{http_code}" "$1"
