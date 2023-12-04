@@ -1,3 +1,3 @@
 #!/bin/bash
 # the bin
-curl -sI "$1" | grep -i Content-Length | awk '{print $2}'
+curl -siLX OPTIONS "$1" | grep -i 'Allow:' | cut -f2- -d' '
