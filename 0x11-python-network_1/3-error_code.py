@@ -3,7 +3,6 @@ if __name__ == "__main__":
     """implementation of the error
     """
     import urllib.request
-    import urllib.error
     import sys
     """ Implementation """
     url = sys.argv[1]
