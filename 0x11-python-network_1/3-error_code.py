@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" implement nothing """
 if __name__ == "__main__":
     """implementation of the error
     """
