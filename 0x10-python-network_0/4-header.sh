@@ -1,3 +1,3 @@
 #!/bin/bash
 # the bin
-curl -sI "$1" | grep -i Content-Length | awk '{print $2}'
+curl -s "$1" -H "X-School-User-Id: 98"
