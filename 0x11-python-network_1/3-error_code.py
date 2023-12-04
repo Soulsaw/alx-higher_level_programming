@@ -3,7 +3,6 @@ if __name__ == "__main__":
     """
     """
     import urllib.request
-    import urllib.error
     import sys
     url = sys.argv[1]
     try:
@@ -11,5 +10,6 @@ if __name__ == "__main__":
             content = reponse.read()
             decode = content.decode('utf-8')
             print(decode)
-    except urllib.error.URLError as e:
-        print('Error code:', e.code)
+    except Exception as e:
+        if hasattr(e, 'code'):
+            print('Error code:', e.code)
