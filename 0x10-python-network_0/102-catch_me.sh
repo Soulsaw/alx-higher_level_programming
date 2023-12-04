@@ -1,3 +1,3 @@
 #!/bin/bash
 # the bin
-curl -sLX PUT "$1" -H "Origin: HolbertonSchool" -d "user_id=98"
+curl -sLX PUT -d "user_id=98" -H "Origin: HolbertonSchool" "$1"
