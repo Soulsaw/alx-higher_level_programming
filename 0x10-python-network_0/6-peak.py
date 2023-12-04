@@ -6,8 +6,8 @@
 def find_peak(list_of_integers):
     """find the peak elements of the lists
     """
-    max = list_of_integers[0] if len(list_of_integers) > 0 else None
+    max = None
     for ele in list_of_integers:
-        if max < ele:
+        if max is None or max < ele:
             max = ele
     return max
