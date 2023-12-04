@@ -1,3 +1,3 @@
 #!/bin/bash
 # the bin
-curl -sI "$1" | grep -i Content-Length | awk '{print $2}'
+curl -sX POST "$1" -d "{email: test@gmail.com, subject: I will always be here for PLD}"
