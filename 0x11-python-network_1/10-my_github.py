@@ -11,6 +11,7 @@ if __name__ == "__main__":
     data = {"username": username, "password": token}
     req = requests.get(url=url, data=data)
     json = req.json()
+    print(req.text)
     if 'id' in json:
         print(json['id'])
     else:
