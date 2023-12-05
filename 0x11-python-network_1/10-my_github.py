@@ -5,14 +5,15 @@ if __name__ == "__main__":
     import requests
     import sys
     """ Implementation """
-    url = 'https://api.github.com/users'
-    username = sys.argv[1]
     token = sys.argv[2]
-    data = {"username": username, "password": token}
-    req = requests.get(url=url, data=data)
+    username = sys.argv[1]
+    url = 'https://api.github.com/users/{}'.format(username)
+    header = {'Accept': 'application/vnd.github+json',
+              'Authorization': f'Bearer {token}'
+              }
+    req = requests.get(url, headers=header)
     json = req.json()
-    print(req.text)
     if 'id' in json:
         print(json['id'])
     else:
-        print("None")
+        print('None')
