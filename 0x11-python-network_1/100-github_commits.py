@@ -7,10 +7,13 @@ if __name__ == "__main__":
     """ Implementation """
     repository_name = sys.argv[1]
     owner_name = sys.argv[2]
+    headers = {'Accept': 'application/vnd.github+json'}
     url = 'https://api.github.com/repos/{}/{}/commits'.format(owner_name,
                                                               repository_name)
-    req = requests.get(url=url)
+    req = requests.get(url=url, headers=headers)
     results = req.json()
-    for i in range(0, 10, 1):
-        print(results[i]['sha'], results[i]['commit']['author']['name'],
-              sep=': ')
+    if req.status_code == 200:
+        for commit in results[:10]:
+            sha = commit['sha']
+            auth_name = commit['commit']['author']['name']
+            print(sha, auth_name, sep=': ')
